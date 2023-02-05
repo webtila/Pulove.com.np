@@ -1,6 +1,11 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Frontend\Homecontroller;
+use App\Http\Controllers\Frontend\AboutMeController;
+use App\Http\Controllers\Frontend\ContactController;
+use App\Http\Controllers\Frontend\PortfolioController;
+use App\Http\Controllers\Frontend\BlogController;
 
 /*
 |--------------------------------------------------------------------------
@@ -12,7 +17,8 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/',[HomeController::class,'index']);
+Route::get('/aboutme',[AboutMeController::class,'index']);
+Route::get('/contact',[ContactController::class,'index']);
+Route::get('/portfolio',[PortfolioController::class,'index']);
+Route::get('/blog',[BlogController::class,'index']);
