@@ -18,7 +18,7 @@ use App\Http\Controllers\Frontend\BlogController;
 |
 */
 Route::get('/',[HomeController::class,'index']);
-Route::get('/aboutme',[AboutMeController::class,'index']);
-Route::get('/contact',[ContactController::class,'index']);
-Route::get('/portfolio',[PortfolioController::class,'index']);
-Route::get('/blog',[BlogController::class,'index']);
+// Route::get('/aboutme',[AboutMeController::class,'index']);
+// Route::get('/contact',[ContactController::class,'index']);
+// Route::get('/portfolio',[PortfolioController::class,'index']);
+// Route::get('/blog',[BlogController::class,'index']);
